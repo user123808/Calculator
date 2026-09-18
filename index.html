@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulačka</title>
 
 
@@ -14,9 +16,9 @@
 
         <input type="text" id="display" value="0" readonly>
 
-
         <div class="buttons">
-            <button onclick="cleardisplay()" onclick="appendNumber('')"class="C">C</button>
+
+            <button onclick="cleardisplay()" onclick="appendNumber('Space')"class="atd">C</button>
             <button onclick="deletelast()"onclick="appendNumber('Backspace')" class="atd">⌫</button>
             <button onclick="addtoDisplay('/')"onclick="appendNumber('/')" class="atd">÷</button>
             <button onclick="addtoDisplay('*')"onclick="appendNumber('*')" class="atd">×</button>
@@ -38,6 +40,7 @@
 
             <button onclick="addtoDisplay('0')"onclick="appendNumber('0')" class="zero" id="b0">0</button>
             <button onclick="addtoDisplay('.')"onclick="appendNumber(',')" id="b0">.</button>
+            <button onclick="changecalculator()"onclick="appendNumber('')" class="C">O</button>
         </div>
 
     </div>
