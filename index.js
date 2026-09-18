@@ -28,6 +28,13 @@ function calculate() {
     }
 }
 
+function changecalculator() {
+    window.location.href = "druhyindex.html";
+}
+
+
+
+
 document.addEventListener("keydown", function(event) {
     if (event.key === "1") {
         addtoDisplay("1");
